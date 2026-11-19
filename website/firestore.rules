@@ -2,12 +2,12 @@ rules_version = '2';
 
 // Public can READ everything the site shows.
 // Only the admin accounts listed below can WRITE.
-// Replace the UIDs after creating the users (see docs/HIL-firebase-setup.md, step 5).
+// Admins: ticho = qnnaZo…, ricardo = DqY229…
 service cloud.firestore {
   match /databases/{database}/documents {
     function isAdmin() {
       return request.auth != null
-        && request.auth.uid in ['REPLACE_WITH_TICHO_UID', 'REPLACE_WITH_YOUR_UID'];
+        && request.auth.uid in ['qnnaZoRlbcb57tbtiGBjbjLGSLP2', 'DqY229bBNnT9WAVL2hzAzsl5paG3'];
     }
 
     match /gigs/{gigId} {

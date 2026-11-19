@@ -14,10 +14,10 @@ Firebase Console → your Ticho project → **Build → Firestore Database → C
 ## 4. [ ] Create Storage bucket
 **Build → Storage → Get started**. Production mode, same region as Firestore. Blaze plan is required for new buckets — you have it. Set a budget alert (Billing) at ~€5 for peace of mind.
 
-## 5. [ ] Enable Email/Password login + create users
+## 5. [x] Enable Email/Password login + create users
 **Build → Authentication → Sign-in method → Email/Password → Enable** (leave "passwordless" off). **Users → Add user**: one for Ticho, one for you. Use a strong password (password manager).
 
-## 6. [ ] Lock down who can edit (UIDs)
+## 6. [x] Lock down who can edit (UIDs)
 In **Authentication → Users**, copy both **User UID** values. Give them to Claude, who puts them into `firestore.rules` and `storage.rules`. UIDs aren't secret; they're just IDs.
 
 ## 7. [ ] Publish the security rules

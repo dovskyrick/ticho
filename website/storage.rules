@@ -6,7 +6,7 @@ service firebase.storage {
   match /b/{bucket}/o {
     function isAdmin() {
       return request.auth != null
-        && request.auth.uid in ['REPLACE_WITH_TICHO_UID', 'REPLACE_WITH_YOUR_UID'];
+        && request.auth.uid in ['qnnaZoRlbcb57tbtiGBjbjLGSLP2', 'DqY229bBNnT9WAVL2hzAzsl5paG3'];
     }
 
     match /{folder}/{fileName} {
