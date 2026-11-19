@@ -1,0 +1,39 @@
+/* ─── Theme tokens ────────────────────────────────────────────────────────────
+   Components only ever use these variables. A theme = one block overriding them.
+   Add new themes as  [data-theme="<id>"] { ... }  and register them in themes.ts.
+   ────────────────────────────────────────────────────────────────────────── */
+:root,
+[data-theme="dark"] {
+  --bg: #0d0d0f;
+  --bg-elev: #17171b;
+  --fg: #f1ede4;
+  --fg-muted: #9a958b;
+  --accent: #e8b04a;          /* doubloon gold */
+  --accent-fg: #111;
+  --border: #2a2a30;
+  --danger: #ff6b6b;
+  --overlay: linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,0) 60%);
+  --font-display: 'Bebas Neue', Impact, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --radius: 10px;
+  --shadow: 0 10px 30px rgba(0,0,0,.45);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg: #f6f3ec;
+  --bg-elev: #ffffff;
+  --fg: #16151a;
+  --fg-muted: #6b675f;
+  --accent: #b5371f;          /* rust-red flag */
+  --accent-fg: #fff;
+  --border: #ddd7cb;
+  --danger: #c0392b;
+  --overlay: linear-gradient(to top, rgba(0,0,0,.75), rgba(0,0,0,0) 60%);
+  --shadow: 0 10px 30px rgba(40,30,10,.12);
+  color-scheme: light;
+}
+
+/* Future themes go here, e.g.
+[data-theme="treasure"] { --bg: #0b1426; --accent: #f2c14e; ... }
+*/
