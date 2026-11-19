@@ -30,7 +30,7 @@ export const defaultLinks: MusicLink[] = [
 ];
 
 export const defaultAbout: AboutContent = {
-  imageUrl: ph('about-dj'),
+  imageUrl: `${import.meta.env.BASE_URL}images/ticho-about.jpg`,
   story: `Ticho was born on the deck of a ship that never stayed in one port for long. He spent his youth raiding merchant vessels, collecting gold, maps and — strangely — crates of vinyl records nobody else wanted.
 
 One stormy night, with the cannons silent and the crew restless, he dragged a battered turntable onto the deck and dropped the needle. The crew stopped arguing. Then they started dancing. By sunrise, even the prisoners were asking for one more track.

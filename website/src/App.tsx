@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import NavBar, { type Tab } from './components/NavBar';
+import Ticker from './components/Ticker';
 import Gigs from './pages/Gigs';
 import Music from './pages/Music';
 import About from './pages/About';
 import ThemeToggle from './theme/ThemeToggle';
-import { useTheme } from './theme/useTheme';
+import DuotoneFilters from './theme/DuotoneFilters';
 import { isFirebaseConfigured } from './lib/firebase';
 
 // Hash routing (#gigs / #music / #about) — works on GitHub Pages without server rewrites.
@@ -15,7 +16,6 @@ const fromHash = (): Tab => {
 };
 
 export default function App() {
-  useTheme(); // apply stored theme on load
   const [tab, setTab] = useState<Tab>(fromHash);
 
   useEffect(() => {
@@ -26,15 +26,18 @@ export default function App() {
 
   return (
     <div className="app">
+      <DuotoneFilters />
       <NavBar tab={tab} />
-      <main className="main">
+      <Ticker />
+      <main className="main" key={tab}>
         {tab === 'gigs' && <Gigs />}
         {tab === 'music' && <Music />}
         {tab === 'about' && <About />}
       </main>
       <footer className="footer">
-        <span>© {new Date().getFullYear()} Ticho</span>
-        {!isFirebaseConfigured && <span className="demo-badge">demo content</span>}
+        <span className="thin">TICHO © {new Date().getFullYear()}</span>
+        <span className="thin">✶ made by the sea ✶</span>
+        {!isFirebaseConfigured && <span className="thin demo-badge">demo content</span>}
       </footer>
       <ThemeToggle />
     </div>

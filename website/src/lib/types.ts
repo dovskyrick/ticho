@@ -40,3 +40,13 @@ export function formatDate(iso: string): string {
   if (Number.isNaN(d.getTime())) return iso;
   return d.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
 }
+
+// Poster-style bits: "14.06", "SATURDAY"
+export function shortDate(iso: string, withYear = false): string {
+  const [y, m, d] = iso.split('-');
+  return withYear ? `${d}.${m}.${y?.slice(2)}` : `${d}.${m}`;
+}
+export function weekday(iso: string): string {
+  const d = new Date(iso + 'T12:00:00');
+  return Number.isNaN(d.getTime()) ? '' : d.toLocaleDateString('en-GB', { weekday: 'long' }).toUpperCase();
+}

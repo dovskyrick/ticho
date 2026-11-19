@@ -1,19 +1,20 @@
 // ─── Theme registry ──────────────────────────────────────────────────────────
 // Each theme = an id here + a matching `[data-theme="<id>"]` block in themes.css.
-// To try a new theme: add an entry below and a CSS block. The toggle button
-// cycles through every theme listed in ACTIVE_THEMES, in order.
+// The toggle button cycles through ACTIVE_THEMES in order.
+// Look & feel: KEFI-collective poster style — duotone photos, heavy uppercase
+// names, thin caps labels on hairlines, coastal afternoon-to-night energy.
 //
-// Planned for later (uncomment + add CSS when we get to them):
-//   { id: 'treasure', label: 'Treasure' }   – gold on deep navy
-//   { id: 'neon',     label: 'Neon' }       – club lights, magenta / cyan
-//   { id: 'parchment',label: 'Parchment' }  – old map, sepia, serif
-//   { id: 'abyss',    label: 'Abyss' }      – deep-sea teal, bioluminescent
+// Planned for later (uncomment + add a CSS block when we get to them):
+//   { id: 'lighthouse', label: 'Lighthouse' } – teal sky, white + red stripes
+//   { id: 'tangerine',  label: 'Tangerine' }  – orange/cobalt duotone, cream text
+//   { id: 'golden',     label: 'Golden Hour' }– warm amber/peach, soft grain
+//   { id: 'atlantic',   label: 'Atlantic' }   – deep sea green, foam white
 // ─────────────────────────────────────────────────────────────────────────────
 export interface ThemeDef { id: string; label: string }
 
 export const ACTIVE_THEMES: ThemeDef[] = [
-  { id: 'dark', label: 'Dark' },
-  { id: 'light', label: 'Light' },
+  { id: 'night', label: 'Night' },   // dark: after sunset, red/blue duotone
+  { id: 'day', label: 'Day' },       // light: sun & sand, orange/blue duotone
 ];
 
-export const DEFAULT_THEME = 'dark';
+export const DEFAULT_THEME = 'night';

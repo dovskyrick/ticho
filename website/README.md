@@ -22,7 +22,9 @@ GitHub Pages (static HTML/JS, built by .github/workflows/deploy-website.yml)
 - **Gigs:** upcoming vs. history is decided by date automatically (`splitGigs` in `src/lib/types.ts`).
 - **Images:** the back-office shrinks uploads to max 1600 px JPEG before upload.
 
-## Themes
+## Themes & look
+KEFI-collective poster style: duotone photos (SVG filters built from the theme's `--duo-*` colours in `src/theme/DuotoneFilters.tsx`), heavy uppercase Montserrat names, thin caps labels on hairlines, grain overlay, scrolling ticker (`src/components/Ticker.tsx`, removable). Themes: **night** (default, red/blue + yellow) and **day** (sand, orange/cobalt).
+
 - Tokens (colors, fonts, radius) per theme: `src/theme/themes.css` (`[data-theme="…"]` blocks).
 - Registry the toggle cycles through: `src/theme/themes.ts` (4 future themes sketched in comments).
 - Toggle button: `src/theme/ThemeToggle.tsx`; remove by deleting `<ThemeToggle />` in `src/App.tsx`.
