@@ -1,0 +1,24 @@
+/* Classic Dark — the first MVP look: Bebas Neue + Inter, gold accent,
+   rounded cards with shadows, natural-colour photos, past gigs in greyscale. */
+[data-theme="classic-dark"] {
+  --bg: #0d0d0f;
+  --bg-elev: #17171b;
+  --fg: #f1ede4;
+  --fg-muted: #9a958b;
+  --accent: #e8b04a;
+  --accent-fg: #111;
+  --accent-2: #e8b04a;
+  --border: #2a2a30;
+  --danger: #ff6b6b;
+  --duo-a-dark: #000; --duo-a-light: #fff;   /* unused: photos stay natural */
+  --duo-b-dark: #000; --duo-b-light: #fff;
+  --font-display: 'Bebas Neue', Impact, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: .04em;
+  --radius: 10px;
+  --shadow: 0 10px 30px rgba(0,0,0,.45);
+  --grain-opacity: 0;
+  --overlay: linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,0) 60%);
+  color-scheme: dark;
+}

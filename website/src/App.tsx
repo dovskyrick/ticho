@@ -4,7 +4,7 @@ import Ticker from './components/Ticker';
 import Gigs from './pages/Gigs';
 import Music from './pages/Music';
 import About from './pages/About';
-import ThemeToggle from './theme/ThemeToggle';
+import ThemeMenu from './theme/ThemeMenu';
 import DuotoneFilters from './theme/DuotoneFilters';
 import { isFirebaseConfigured } from './lib/firebase';
 
@@ -39,7 +39,7 @@ export default function App() {
         <span className="thin">✶ made by the sea ✶</span>
         {!isFirebaseConfigured && <span className="thin demo-badge">demo content</span>}
       </footer>
-      <ThemeToggle />
+      <ThemeMenu />
     </div>
   );
 }

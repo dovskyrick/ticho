@@ -1,0 +1,16 @@
+/* Night — sea at night, poster yellow, red/blue + orange/blue photos */
+[data-theme="night"] {
+  --bg: #0a0b1a;
+  --bg-elev: #13152b;
+  --fg: #f4f1ea;
+  --fg-muted: #8e90b0;
+  --accent: #ffe500;
+  --accent-fg: #0a0b1a;
+  --accent-2: #ff2b2b;
+  --border: rgba(244,241,234,.18);
+  --danger: #ff5c5c;
+  --duo-a-dark: #2626d9;  --duo-a-light: #ff2d2d;
+  --duo-b-dark: #1f4fd6;  --duo-b-light: #ff5c00;
+  --ticker-bg: #ffe500;   --ticker-fg: #0a0b1a;
+  color-scheme: dark;
+}

@@ -1,0 +1,23 @@
+/* Layout tweaks shared by both classic themes (imported by each classic theme). */
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .ticker, :is([data-theme="classic-dark"], [data-theme="classic-light"]) .poster-top { display: none; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .duo img { filter: none; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .poster.past .duo img { filter: grayscale(.85) brightness(.8); transition: filter .5s, transform .6s; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .poster.past:hover .duo img { filter: none; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .poster-grid { gap: 20px; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .poster-grid.wall { gap: 10px; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .poster-date { font: 700 .75rem/1.6 var(--font-body); letter-spacing: .1em; align-self: flex-start;
+                   background: var(--accent); color: var(--accent-fg); padding: 2px 8px; border-radius: 4px; opacity: 1; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .poster.past .poster-date { font-size: .7rem; background: rgba(255,255,255,.18); color: #fff; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .poster-bottom h3 { color: #fff; font-size: 1.9rem; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .poster.past .poster-bottom h3 { font-size: 1.35rem; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .section-head h2 { font-size: clamp(2.6rem, 7vw, 4.4rem); }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .hairline-row { border: none; padding: 0; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .nav-links a { font-family: var(--font-display); font-size: 1.3rem; letter-spacing: .08em; padding: 4px 14px; border-radius: 999px; font-weight: 400; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .nav-links a.active { background: var(--accent); color: var(--accent-fg); }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .nav-links a.active::after { display: none; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .logo-bars { display: none; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .link-row { border: 2px solid var(--fg); border-radius: 999px; margin-bottom: 12px; justify-content: center; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .link-num, :is([data-theme="classic-dark"], [data-theme="classic-light"]) .link-arrow { display: none; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .link-label { flex: none; font-family: var(--font-body); font-weight: 700; font-size: 1rem; letter-spacing: .05em; text-transform: none; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .link-row:hover { background: var(--fg); color: var(--bg); padding-left: 8px; }
+:is([data-theme="classic-dark"], [data-theme="classic-light"]) .about-punch { color: var(--fg); font-weight: 400; font-size: 1rem; }

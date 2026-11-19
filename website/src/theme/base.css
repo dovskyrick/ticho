@@ -1,0 +1,25 @@
+/* ─── Base tokens ─────────────────────────────────────────────────────────────
+   Every theme in theme/themes/<id>/theme.css overrides these under
+   [data-theme="<id>"]. Components ONLY use these variables (plus optional
+   theme-scoped overrides inside a theme's own file).
+   ────────────────────────────────────────────────────────────────────────── */
+:root {
+  /* colour */
+  --bg: #0a0b1a; --bg-elev: #13152b; --fg: #f4f1ea; --fg-muted: #8e90b0;
+  --accent: #ffe500; --accent-fg: #0a0b1a; --accent-2: #ff2b2b;
+  --border: rgba(244,241,234,.18); --danger: #ff5c5c;
+  /* photos: duotone pairs (shadow → highlight), see DuotoneFilters.tsx */
+  --duo-a-dark: #2626d9; --duo-a-light: #ff2d2d;
+  --duo-b-dark: #1f4fd6; --duo-b-light: #ff5c00;
+  --ticker-bg: var(--accent); --ticker-fg: var(--accent-fg);
+  /* type */
+  --font-display: 'Montserrat', 'Arial Black', sans-serif;
+  --font-body: 'Montserrat', system-ui, sans-serif;
+  --display-weight: 900;
+  --display-tracking: -.01em;
+  /* shape & texture */
+  --radius: 0px;
+  --shadow: none;
+  --grain-opacity: .07;
+  --overlay: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0) 45%);
+}

@@ -1,0 +1,18 @@
+/* Day — sand, cobalt ink, beach-umbrella orange */
+[data-theme="day"] {
+  --bg: #f3ece0;
+  --bg-elev: #fffaf1;
+  --fg: #101a5c;
+  --fg-muted: #5d6390;
+  --accent: #ff4d00;
+  --accent-fg: #fffaf1;
+  --accent-2: #1f4fd6;
+  --border: rgba(16,26,92,.2);
+  --danger: #c4231c;
+  --duo-a-dark: #1f4fd6;  --duo-a-light: #ff6a00;
+  --duo-b-dark: #2a2ad0;  --duo-b-light: #ff3434;
+  --ticker-bg: #1f4fd6;   --ticker-fg: #fffaf1;
+  color-scheme: light;
+}
+[data-theme="day"] .poster-mark { color: #ffe500; }
+[data-theme="day"] .about-punch { color: var(--accent-2); }

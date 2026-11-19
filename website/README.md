@@ -23,11 +23,10 @@ GitHub Pages (static HTML/JS, built by .github/workflows/deploy-website.yml)
 - **Images:** the back-office shrinks uploads to max 1600 px JPEG before upload.
 
 ## Themes & look
-KEFI-collective poster style: duotone photos (SVG filters built from the theme's `--duo-*` colours in `src/theme/DuotoneFilters.tsx`), heavy uppercase Montserrat names, thin caps labels on hairlines, grain overlay, scrolling ticker (`src/components/Ticker.tsx`, removable). Themes: **night** (default, red/blue + yellow) and **day** (sand, orange/cobalt).
-
-- Tokens (colors, fonts, radius) per theme: `src/theme/themes.css` (`[data-theme="…"]` blocks).
-- Registry the toggle cycles through: `src/theme/themes.ts` (4 future themes sketched in comments).
-- Toggle button: `src/theme/ThemeToggle.tsx`; remove by deleting `<ThemeToggle />` in `src/App.tsx`.
+Default look follows the KEFI-collective posters (duotone photos, heavy Montserrat, hairline labels, grain, ticker).
+Picker: bottom-right drop-up menu (`src/theme/ThemeMenu.tsx`); remove by deleting `<ThemeMenu />` in `src/App.tsx`.
+Each theme lives in its own folder under `src/theme/themes/` — see [`src/theme/README.md`](src/theme/README.md) to add one.
+Current: **Night** (default), **Day**, **Classic Dark**, **Classic Light** (the two first-draft looks).
 
 ## Dev
 ```bash
