@@ -8,7 +8,7 @@ Repo **ticho → Settings → Pages → Build and deployment → Source: "GitHub
 ## 2. [ ] Create Firestore database
 Firebase Console → your Ticho project → **Build → Firestore Database → Create database**. Production mode, region close to Portugal (e.g. `europe-west1`). Rules get replaced in step 6 anyway.
 
-## 3. [ ] Register web app + copy config
+## 3. [x] Register web app + copy config
 **Project settings → General → Your apps → Add app → Web (</>)**. Name it "ticho-web", skip hosting. Copy the `firebaseConfig` object and paste it to Claude (it's public, not secret).
 
 ## 4. [ ] Create Storage bucket
